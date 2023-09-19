@@ -1,0 +1,82 @@
+._mz_pop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 370px;
+    max-width: 100%;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.721);
+    backdrop-filter: blur(1rem);
+    padding: 0 12px;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 19px 0px rgba(0, 0, 0, 0.1);
+    height: auto;
+    max-height: 40px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+._mz_pop._active {
+    transform: translateY(0);
+    max-height: 500px;
+}
+._mz_pop_header {
+    padding: 12px 0;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+._mz_pop h6 {
+    margin: 0;
+}
+._mz_pop_body {
+    padding: 12px 0;
+}
+._mz_pop button {
+    background-color: transparent;
+    display: inline-block;
+    height: auto;
+    padding: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+}
+._mz_pop._active button {
+    transform: translateY(-50%) rotate(180deg);
+}
+._mz_options input {
+    display: none;
+}
+._mz_options label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+._mz_options label::before {
+    content: "";
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 16px;
+    min-height: 16px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+._mz_options p {
+    color: #000;
+    font-size: 12px;
+    margin: 0;
+}
+._mz_options h6 {
+    font-size: 14px;
+}
+._mz_options input:checked + label::before {
+    background-color: #000;
+}
