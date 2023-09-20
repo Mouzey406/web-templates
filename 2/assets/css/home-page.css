@@ -583,5 +583,10 @@
         ._p_left {
             padding-right: 0;
         }
+        ._about_tg_member {
+            padding: 10px;
+            -webkit-user-select: none;
+            user-select: none;
+        }
 
     }
