@@ -477,8 +477,8 @@
             width: 35px;
         }
         ._menu_toggler span {
-            width: 25px;
-            height: 2px;
+            width: 20px;
+            height: 1.5px;
             background-color: var(--font-main);
             display: block;
         }
