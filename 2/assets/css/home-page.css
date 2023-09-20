@@ -459,7 +459,7 @@
     @media(max-width: 900px) {
 
         ._review, ._car_item {
-            flex: 1 0 350px;
+            flex: 1 0 320px;
         }
 
         ._contact_left {
@@ -473,12 +473,12 @@
         ._menu_toggler {
             display: flex;
             flex-direction: column;
-            row-gap: 12px;
+            row-gap: 7px;
             width: 35px;
         }
         ._menu_toggler span {
-            width: 35px;
-            height: 1.5px;
+            width: 25px;
+            height: 2px;
             background-color: var(--font-main);
             display: block;
         }
@@ -555,29 +555,33 @@
             padding: 7px;
         }
         ._adh_left {
-            grid-template-rows: 150px 1fr;
+            grid-template-rows: 150px 129px;
         }
         ._adh_vid {
             padding: 14px;
         }
-        ._line {
+        ._line, ._adh_s_header {
             display: none;
         }
         ._team_grid {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 250px 150px 150px;
+            grid-template-rows: 200px 150px 150px;
         }
         ._team_grid h6 {
             display: flex;
             gap: 11px;
             align-items: center;
+            margin-bottom: 0;
         }
         ._larger_number {
-            font-size: 25px;
+            line-height: 0.75 !important;
         }
         ._tg_1 {
             grid-row: 1 / 1;
             padding: 15px;
+        }
+        ._p_left {
+            padding-right: 0;
         }
 
     }

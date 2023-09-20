@@ -177,6 +177,7 @@ header > ._container {
 }
 ._logo {
     font-size: 20px;
+    font-weight: 600;
     text-transform: uppercase;
     color: var(--font-main);
 }
