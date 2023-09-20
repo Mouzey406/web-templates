@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/mz.gas.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/home-page.css">
+</head>
+
+<body>
+    <header class="_mz_header">
+        <div class="_container _flex _align_center _justify_between">
+            <div class="_hleft _flex _gap_sm">
+                <button type="button" class="_menu_toggler _flex _align_center _gap_x_sm">
+                    <span class="_hamburger">
+                        <bdi></bdi>
+                        <bdi></bdi>
+                        <bdi></bdi>
+                    </span>
+                    <span>Menu</span>
+                </button>
+                <div class="_flex _align_center _gap_x_sm">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21px" height="21px" viewBox="0 0 24 24" fill="none">
+                        <g clip-path="url(#clip0_15_152)">
+                            <rect width="24" height="24" fill="none" />
+                            <circle cx="10.5" cy="10.5" r="6.5" stroke="#000000" stroke-linejoin="round" />
+                            <path
+                                d="M19.6464 20.3536C19.8417 20.5488 20.1583 20.5488 20.3536 20.3536C20.5488 20.1583 20.5488 19.8417 20.3536 19.6464L19.6464 20.3536ZM20.3536 19.6464L15.3536 14.6464L14.6464 15.3536L19.6464 20.3536L20.3536 19.6464Z"
+                                fill="#000000" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_15_152">
+                                <rect width="24" height="24" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <span>Search</span>
+                </div>
+            </div>
+            <div class="_hcenter">
+                <a href="./index.html" class="_logo">Recipos</a>
+            </div>
+            <div class="_hright _flex _gap_sm">
+                <a href="#">All Recipes</a>
+                <a href="#">Create One</a>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="_hero">
+            <!-- <img class="_of_imgs" width="100px" src="./assets/img/spice_1.png" alt="">
+            <img class="_of_imgs" width="100px" src="./assets/img/spice_2.png" alt=""> -->
+            <div class="_container">
+                <div class="_top">
+                    <h1>Find the perfect recipes everyday</h1>
+                    <p>More than 20 thousand recipes of healthy and tasty food, Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Accusantium distinctio laudantium cumque nimi!</p>
+                    <a href="#get-started-page" class="_btn">Get Started</a>
+                </div>
+                <div class="_bottom _flex _justify_center">
+                    <img loading="lazy" width="30px" src="./assets/img/e.jpg" alt=""><img src="./assets/img/d.jpg" alt=""><img src="./assets/img/f.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="_top_recipes">
+            <div class="_container">
+                <div class="_tr_header _flex _justify_between">
+                    <h2>Recently Added</h2>
+                    <div class="_flex _gap_x_sm">
+                        <button type="button" class="_move">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="_move"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="_tr_body _flex _gap_x_sm _justify_between">
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/a.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/b.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/c.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/c.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="_t_recent_recipes">
+            <div class="_container">
+                <div class="_tr_header _flex _justify_between">
+                    <h2>Most Favourited</h2>
+                    <div class="_flex _gap_x_sm">
+                        <button type="button" class="_move">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-arrow-left-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z" />
+                            </svg>
+                        </button>
+                        <button type="button" class="_move"><svg xmlns="http://www.w3.org/2000/svg" width="25"
+                                height="25" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                            </svg></button>
+                    </div>
+                </div>
+                <div class="_tr_body _flex _gap_x_sm _justify_between">
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/g.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/h.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/i.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="_tr_card _card">
+                        <div class="_card_top">
+                            <img src="./assets/img/j.jpg" alt="">
+                            <div class="_rating _flex _align_center _gap_x_sm">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                </svg>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                        <div class="_card_bottom _flex _justify_between">
+                            <div>
+                                <h4>Pallagne Slad with Chicken broth</h4>
+                                <h5 class="_details">By <span>Mark Jaberyn</span></h5>
+                            </div>
+                            <button type="button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                    class="bi bi-heart" viewBox="0 0 16 16">
+                                    <path
+                                        d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="_articles">
+            <div class="_container">
+                <div class="_a_header _flex _justify_between">
+                    <h2>We've got articles you'll love!</h2>
+                    <a href="#">View More</a>
+                </div>
+                <div class="_a_body _justify_between">
+                    <div class="_a_1 _a">
+                        <div class="_a_image">
+                            <img src="./assets/img/z.jpg" alt="">
+                        </div>
+                        <div class="_a_info">
+                            <h3 class="_main_font">Lasagna isn't hard, this is how I learnt to cook it in 2 trials</h3>
+                            <div class="_a_btm _flex _justify_between _align_center">
+                                <p>May 31 - 7 Min read</p>
+                                <a href="#read-more">Read Article</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_a_2_3_4">
+                        <div class="_a_2 _a">
+                            <div class="_a_image">
+                                <img src="./assets/img/e.jpg" alt="">
+                            </div>
+                            <div class="_a_info">
+                                <h3>Lasagna isn't hard, this is how I learnt to cook it in 2 trials</h3>
+                            <div class="_a_btm _flex _justify_between _align_center">
+                                <p>May 31 - 7 Min read</p>
+                                <a href="#read-more">Read Article</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="_a_3 _a">
+                            <div class="_a_image">
+                                <img src="./assets/img/d.jpg" alt="">
+                            </div>
+                            <div class="_a_info">
+                                <h3>Lasagna isn't hard, this is how I learnt to cook it in 2 trials</h3>
+                            <div class="_a_btm _flex _justify_between _align_center">
+                                <p>May 31 - 7 Min read</p>
+                                <a href="#read-more">Read Article</a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="_a_4 _a">
+                            <div class="_a_image">
+                                <img src="./assets/img/j.jpg" alt="">
+                            </div>
+                            <div class="_a_info">
+                                <h3>Lasagna isn't hard, this is how I learnt to cook it in 2 trials</h3>
+                            <div class="_a_btm _flex _justify_between _align_center">
+                                <p>May 31 - 7 Min read</p>
+                                <a href="#read-more">Read Article</a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="_subscribe">
+            <div class="_container _center">
+                <h3>Want to get the latest from the world of Recipo?</h3>
+                <p>Be the first to know by joining our newsletter</p>
+                <form action="" class="_form _flex _align_center _justify_center _gap_sm">
+                    <input type="email" placeholder="myemail@mail.com">
+                    <button type="submit" class="_btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="_container">
+            <div class="_footer_columns">
+                <div>
+                    <h2>SITE</h2>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Recipes</a></li>
+                        <li><a href="">Categories</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>MORE FROM US</h2>
+                    <ul>
+                        <li><a href="">Cooking Classes</a></li>
+                        <li><a href="">Chef Profiles</a></li>
+                        <li><a href="">Food Photography</a></li>
+                        <li><a href="">Our Bloggers</a></li>
+                        <li><a href="">Cooking Videos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>ADDITIONAL LINKS</h2>
+                    <ul>
+                        <li><a href="">Cooking Tips</a></li>
+                        <li><a href="">Kitchen Tools</a></li>
+                        <li><a href="">Meal Planning</a></li>
+                        <li><a href="">Dessert Corner</a></li>
+                        <li><a href="">Vegeterian Delights</a></li>
+                        <li><a href="">Nutrition Information</a></li>
+                        <li><a href="">Cooking Classes</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>LET'S CONNECT</h2>
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Instagram</a></li>
+                        <li><a href="">Youtube</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Threads</a></li>
+                        <li><a href="">Pinterest</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="_c _flex _justify_center">
+                <p>Designed by Mozaski. All Rights Reserved. </p>
+            </div>
+        </div>
+    </footer>
+    <div class="_mz_pop _active">
+        <div class="_mz_pop_header">
+            <h6>Toggle Interactivity</h6>
+            <button type="button" id="_hide_mz_pop"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                </svg></button>
+        </div>
+        <div class="_mz_pop_body">
+            <div class="_mz_options">
+                <div class="_js_option">
+                    <input type="checkbox" id="jsOption">
+                    <label for="jsOption">
+                        <div>
+                            <h6>Apply Javascript</h6>
+                            <p>You'll learn how to make this page interactive using JS.</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="_ofc_bg _menu_toggler"></div>
+    <div id="offCanvasMenu">
+        <div class="_ocm_header">
+            <button type="button" id="closeOCM" class="_menu_toggler _flex _align_center _gap_x_sm">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+                </svg>
+                <span>Close</span>
+            </button>
+        </div>
+        <div class="_ocm_body">
+            <ul class="_ocm_menu">
+                <li><a href="">All Categories</a></li>
+                <li><a href="">Vegan Only</a></li>
+                <li><a href="">Sweet Delicacies</a></li>
+                <li><a href="">Cookathon</a></li>
+                <li><a href="">Top Recipes</a></li>
+                <li><a href="">Most rated</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./assets/scripts/mz.gas.js"></script>
+    <script src="./assets/scripts/page.js"></script>
+</body>
+
+</html>
