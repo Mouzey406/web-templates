@@ -152,7 +152,7 @@
         justify-content: flex-start;
         line-height: 1.35;
     }
-    h2::before {
+    main h2::before {
         content: "";
         display: inline-block;
         width: 35px;
@@ -411,6 +411,9 @@
         transform: translateY(-25px);
     }
 
+    footer {
+
+    }
 
 
     @media(max-width: 1200px) {

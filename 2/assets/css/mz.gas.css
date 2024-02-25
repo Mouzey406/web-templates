@@ -1,4 +1,5 @@
 ._mz_pop {
+    display: none;
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -29,6 +30,7 @@
 }
 ._mz_pop h6 {
     margin: 0;
+    color: #000;
 }
 ._mz_pop_body {
     padding: 12px 0;
@@ -54,7 +56,7 @@
 ._mz_options label {
     display: flex;
     gap: 12px;
-    align-items: center;
+    align-items: start;
     cursor: pointer;
 }
 ._mz_options label::before {
@@ -72,7 +74,10 @@
 ._mz_options p {
     color: #000;
     font-size: 12px;
-    margin: 0;
+    margin: 7px 0 0;
+    opacity: 0.6;
+    font-weight: 500;
+    line-height: 1;
 }
 ._mz_options h6 {
     font-size: 14px;

@@ -186,7 +186,7 @@ header > ._container {
 }
 
 footer {
-    background-color: var(--font-main);
+    background-color: var(--font-secondary);
     color: #fff;
 }
 ._footer_columns {
@@ -196,18 +196,21 @@ footer {
     padding: 80px 0 60px 0;
 }
 ._footer_columns h2 {
-    color: #b9b8b8;
-    font-weight: 300;
+    color: var(--bg-light);
+    font-weight: 500;
     font-size: 15px;
     letter-spacing: 1.3px;
 }
 ._footer_columns a {
-    color: #fff;
-    font-weight: 300;
+    color: var(--alt-1);
+    font-weight: 400;
     font-size: 13px;
 }
 ._footer_columns ul > li:not(:last-child) {
     margin-bottom: 14px;
+}
+footer p {
+    color: var(--alt-1);
 }
 ._c {
     padding: 20px;
@@ -259,7 +262,7 @@ footer {
     font-weight: 300;
 }
 
-section:not(._cst) {
+main section:not(._cst) {
     padding: var(--section-padding) 0;
 }
 @media(max-width: 1450px) {
